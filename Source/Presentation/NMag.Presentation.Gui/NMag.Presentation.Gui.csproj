@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+	<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AssemblyName>NMag.Gui</AssemblyName>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>..\..\Bin\Debug</OutputPath>
+    <DocumentationFile>..\..\Bin\Debug\NMag.Gui.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath>..\..\Bin\Release</OutputPath>
+    <DocumentationFile>..\..\Bin\Release\NMag.Gui.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\NMag.Persistence\NMag.Persistence.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Auxilia.Core">
+      <HintPath>..\..\..\..\Auxilia\Source\Bin\Debug\ref\Auxilia.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Auxilia.Graphs.Core">
+      <HintPath>..\..\..\..\Auxilia\Source\Bin\Debug\ref\Auxilia.Graphs.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Auxilia.Graphs.Graphviz">
+      <HintPath>..\..\..\..\Auxilia\Source\Bin\Debug\ref\Auxilia.Graphs.Graphviz.dll</HintPath>
+    </Reference>
+    <Reference Include="Auxilia.Presentation.Core">
+      <HintPath>..\..\..\..\Auxilia\Source\Bin\Debug\Auxilia.Presentation.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

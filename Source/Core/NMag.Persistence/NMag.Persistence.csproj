@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <AssemblyName>NMag.Persistence</AssemblyName>
+	<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <RootNamespace>NMag.Persistence</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>..\Bin\Debug</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath>..\Bin\Release</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NMag.Domain\NMag.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Auxilia.Core">
+      <HintPath>..\..\..\..\Auxilia\Source\Bin\Debug\ref\Auxilia.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Auxilia.Extensions">
+      <HintPath>..\..\..\..\Auxilia\Source\Bin\Debug\Auxilia.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Auxilia.Utilities">
+      <HintPath>..\..\..\..\Auxilia\Source\Bin\Debug\ref\Auxilia.Utilities.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

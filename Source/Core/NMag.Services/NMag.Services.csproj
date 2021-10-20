@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0-windows</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath></OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NMag.Domain\NMag.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Auxilia.Core">
+      <HintPath>..\..\..\..\Auxilia\Source\Bin\Debug\Auxilia.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Auxilia.Extensions">
+      <HintPath>..\..\..\..\Auxilia\Source\Bin\Debug\Auxilia.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Auxilia.Graphs.Core">
+      <HintPath>..\..\..\..\Auxilia\Source\Bin\Debug\Auxilia.Graphs.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

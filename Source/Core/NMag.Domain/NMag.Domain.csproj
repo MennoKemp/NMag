@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	<TargetFramework>net5.0-windows</TargetFramework>
+    <RootNamespace>NMag</RootNamespace>
+	  <useWpf>True</useWpf>
+	  <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AssemblyName>NMag.Domain</AssemblyName>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>..\..\Bin\Debug</OutputPath>
+    <DocumentationFile>..\..\Bin\Debug\NMag.Domain.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath>..\..\Bin\Debug</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\.editorconfig" Link=".editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Auxilia.Core">
+      <HintPath>..\..\..\..\Auxilia\Source\Bin\Debug\ref\Auxilia.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Auxilia.Extensions">
+      <HintPath>..\..\..\..\Auxilia\Source\Bin\Debug\Auxilia.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Auxilia.Utilities">
+      <HintPath>..\..\..\..\Auxilia\Source\Bin\Debug\Auxilia.Utilities.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
