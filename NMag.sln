@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31229.75
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NMag.Domain", "Core\NMag.Domain\NMag.Domain.csproj", "{A9AB15D3-7BC9-4489-BE48-59E92083D0DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NMag.Domain", "Source\Core\NMag.Domain\NMag.Domain.csproj", "{A9AB15D3-7BC9-4489-BE48-59E92083D0DE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NMag.Persistence", "Core\NMag.Persistence\NMag.Persistence.csproj", "{D980A323-2EA7-47A2-9872-AF44445FE938}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NMag.Persistence", "Source\Core\NMag.Persistence\NMag.Persistence.csproj", "{D980A323-2EA7-47A2-9872-AF44445FE938}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NMag.Presentation.Gui", "Presentation\NMag.Presentation.Gui\NMag.Presentation.Gui.csproj", "{DF40AAEC-F3D3-4DDB-A8DC-8F26783D53CE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NMag.Presentation.Gui", "Source\Presentation\NMag.Presentation.Gui\NMag.Presentation.Gui.csproj", "{DF40AAEC-F3D3-4DDB-A8DC-8F26783D53CE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{808E9BF2-5892-4283-88FC-50DF0C13C606}"
 	ProjectSection(SolutionItems) = preProject
@@ -18,9 +18,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{546EB2D1-9
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{A6FDEF48-049C-46DA-9A04-4ABC2FB36B7A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NMag.Presentation", "Presentation\NMag.Presentation\NMag.Presentation.csproj", "{C989A61B-4AAF-457D-8BF3-350B17BA743B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NMag.Presentation", "Source\Presentation\NMag.Presentation\NMag.Presentation.csproj", "{C989A61B-4AAF-457D-8BF3-350B17BA743B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NMag.Services", "Core\NMag.Services\NMag.Services.csproj", "{AFC3938D-8229-4221-8F72-62F25DF78B98}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NMag.Services", "Source\Core\NMag.Services\NMag.Services.csproj", "{AFC3938D-8229-4221-8F72-62F25DF78B98}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NMag.Commands", "Source\Core\NMag.Commands\NMag.Commands.csproj", "{B2A8E7F5-6280-468B-B1DA-2BB079728AAF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NMag.Injections", "Source\Core\NMag.Injections\NMag.Injections.csproj", "{28ADD616-F693-415D-B44B-7D2DBD7A3245}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{A600AA2C-A371-4EF7-B525-531F6618207C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NMag.Injections.Tests", "Tests\NMag.Injections.Tests\NMag.Injections.Tests.csproj", "{93EA5A45-0FD3-4209-A6AC-A4B602A93E09}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -48,6 +56,18 @@ Global
 		{AFC3938D-8229-4221-8F72-62F25DF78B98}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AFC3938D-8229-4221-8F72-62F25DF78B98}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AFC3938D-8229-4221-8F72-62F25DF78B98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2A8E7F5-6280-468B-B1DA-2BB079728AAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2A8E7F5-6280-468B-B1DA-2BB079728AAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2A8E7F5-6280-468B-B1DA-2BB079728AAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2A8E7F5-6280-468B-B1DA-2BB079728AAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28ADD616-F693-415D-B44B-7D2DBD7A3245}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28ADD616-F693-415D-B44B-7D2DBD7A3245}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28ADD616-F693-415D-B44B-7D2DBD7A3245}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28ADD616-F693-415D-B44B-7D2DBD7A3245}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93EA5A45-0FD3-4209-A6AC-A4B602A93E09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93EA5A45-0FD3-4209-A6AC-A4B602A93E09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93EA5A45-0FD3-4209-A6AC-A4B602A93E09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93EA5A45-0FD3-4209-A6AC-A4B602A93E09}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -58,6 +78,9 @@ Global
 		{DF40AAEC-F3D3-4DDB-A8DC-8F26783D53CE} = {A6FDEF48-049C-46DA-9A04-4ABC2FB36B7A}
 		{C989A61B-4AAF-457D-8BF3-350B17BA743B} = {A6FDEF48-049C-46DA-9A04-4ABC2FB36B7A}
 		{AFC3938D-8229-4221-8F72-62F25DF78B98} = {546EB2D1-98ED-4AE4-A8B7-087C4CFC37D2}
+		{B2A8E7F5-6280-468B-B1DA-2BB079728AAF} = {546EB2D1-98ED-4AE4-A8B7-087C4CFC37D2}
+		{28ADD616-F693-415D-B44B-7D2DBD7A3245} = {546EB2D1-98ED-4AE4-A8B7-087C4CFC37D2}
+		{93EA5A45-0FD3-4209-A6AC-A4B602A93E09} = {A600AA2C-A371-4EF7-B525-531F6618207C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1925F3DB-AAF8-4F98-AE4F-948756FE71DA}

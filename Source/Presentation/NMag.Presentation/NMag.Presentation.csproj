@@ -27,7 +27,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Core\NMag.Persistence\NMag.Persistence.csproj" />
+    <ProjectReference Include="..\..\Core\NMag.Commands\NMag.Commands.csproj" />
+    <ProjectReference Include="..\..\Core\NMag.Injections\NMag.Injections.csproj" />
     <ProjectReference Include="..\..\Core\NMag.Services\NMag.Services.csproj" />
   </ItemGroup>
 

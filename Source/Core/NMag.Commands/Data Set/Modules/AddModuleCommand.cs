@@ -2,7 +2,7 @@
 using Microsoft.Extensions.Logging;
 using System;
 
-namespace NMag.Presentation.Commands
+namespace NMag.Commands
 {
 	[Command(typeof(AddModuleCommand))]
 	public abstract class AddModuleCommand : CommandBase

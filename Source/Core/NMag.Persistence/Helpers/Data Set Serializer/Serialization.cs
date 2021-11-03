@@ -3,7 +3,7 @@ using System.IO;
 
 namespace NMag.Persistence
 {
-	public partial class DataSetSerializer
+	internal partial class DataSetSerializer
 	{
 		public void Serialize(DataSet dataSet, string filePath)
 		{

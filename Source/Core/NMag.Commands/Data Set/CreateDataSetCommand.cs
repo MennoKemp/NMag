@@ -1,7 +1,7 @@
 ﻿using Auxilia.Delegation.Commands;
 using Microsoft.Extensions.Logging;
 
-namespace NMag.Presentation.Commands
+namespace NMag.Commands
 {
 	[Command(typeof(CreateDataSetCommand))]
 	public class CreateDataSetCommand : CommandBase

@@ -2,7 +2,7 @@
 
 namespace NMag.Persistence
 {
-	public class DeserializationException : Exception
+	internal class DeserializationException : Exception
 	{
 		public DeserializationException(string message, int lineIndex, string line, string dataBlock)
 			: base(message)

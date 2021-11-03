@@ -2,12 +2,12 @@
 
 namespace NMag.Persistence
 {
-	public partial class DataSetSerializer : IDataSetSerializer
+	internal partial class DataSetSerializer
 	{
 		private const string BlockDelimiter = "***";
 		private const string CommentIndicator = "*";
 		
-		private static readonly Encoding Encoding = Encoding.UTF7;
+		private static readonly Encoding Encoding = Encoding.UTF8;
 
 		private string _currentBlock;
 		private int _currentLineIndex;

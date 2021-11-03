@@ -8,7 +8,7 @@ using System.Windows;
 
 namespace NMag.Persistence
 {
-	public partial class DataSetSerializer
+	internal partial class DataSetSerializer
 	{
 		public DataSet Deserialize(string filePath)
 		{

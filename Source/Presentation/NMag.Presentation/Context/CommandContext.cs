@@ -1,4 +1,6 @@
-﻿namespace NMag.Presentation.Commands
+﻿using NMag.Commands;
+
+namespace NMag.Presentation.Commands
 {
 	public class CommandContext : ICommandContext
 	{

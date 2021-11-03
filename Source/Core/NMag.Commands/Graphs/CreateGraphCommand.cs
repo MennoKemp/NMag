@@ -6,7 +6,7 @@ using Microsoft.Extensions.Logging.Abstractions;
 using NMag.Services;
 using System;
 
-namespace NMag.Presentation.Commands
+namespace NMag.Commands
 {
 	[Command(typeof(CreateGraphCommand))]
 	public class CreateGraphCommand : CommandBase

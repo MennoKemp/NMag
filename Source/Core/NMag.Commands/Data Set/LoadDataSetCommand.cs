@@ -5,21 +5,21 @@ using Microsoft.Extensions.Logging;
 using NMag.Persistence;
 using System;
 
-namespace NMag.Presentation.Commands
+namespace NMag.Commands
 {
 	[Command(typeof(LoadDataSetCommand))]
 	public class LoadDataSetCommand : CommandBase
 	{
 		private readonly ICommandContext _context;
-		private readonly IDataSetSerializer _dataSetSerializer;
+		//private readonly IDataSetSerializer _dataSetSerializer;
 		private readonly ILogger _logger;
 
-		public LoadDataSetCommand(ICommandContext commandContext, IDataSetSerializer dataSetSerializer, ILogger<LoadDataSetCommand> logger)
-		{
-			_context = commandContext.ThrowIfNull(nameof(commandContext));
-			_dataSetSerializer = dataSetSerializer.ThrowIfNull(nameof(dataSetSerializer));
-			_logger = logger;
-		}
+		//public LoadDataSetCommand(ICommandContext commandContext, IDataSetSerializer dataSetSerializer, ILogger<LoadDataSetCommand> logger)
+		//{
+		//	_context = commandContext.ThrowIfNull(nameof(commandContext));
+		//	_dataSetSerializer = dataSetSerializer.ThrowIfNull(nameof(dataSetSerializer));
+		//	_logger = logger;
+		//}
 
 		[Parameter(nameof(Path))]
 		public string Path { get; set; }
@@ -53,7 +53,7 @@ namespace NMag.Presentation.Commands
 		{
 			try
 			{
-				_context.DataSet = _dataSetSerializer.Deserialize(Path);
+				//_context.DataSet = _dataSetSerializer.Deserialize(Path);
 				_logger.LogInformation("Data set loaded.");
 			}
 			catch (Exception exception)

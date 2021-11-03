@@ -3,7 +3,7 @@ using Auxilia.Extensions;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using NMag.Persistence;
+using NMag.Commands;
 using NMag.Presentation.Commands;
 using NMag.Services;
 using Serilog;
@@ -11,6 +11,7 @@ using Serilog.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using ILogger = Microsoft.Extensions.Logging.ILogger;
 
 namespace NMag.Presentation
@@ -41,7 +42,7 @@ namespace NMag.Presentation
 				});
 				services.AddSingleton<ICommandContext>(new CommandContext());
 				services.AddSingleton<IGraphCreationService, GraphCreationService>();
-				services.AddTransient<IDataSetSerializer, DataSetSerializer>();
+				//services.AddTransient<IDataSetSerializer, DataSetSerializer>();
 				services.AddTransient(CommandTypes);
 				services.AddLogging(l => l.AddConsole());
 			}).Build();
@@ -88,12 +89,12 @@ namespace NMag.Presentation
 			ILogger<Program> logger = Host.Services.GetRequiredService<ILogger<Program>>();
 
 			Console.WriteLine(Properties.Resources.About);
-			Console.WriteLine(string.Empty);
-            
+
 			while (true)
 			{
 				try
 				{
+					Console.WriteLine();
 					Console.Write(">");
 					string input = Console.ReadLine()?.Trim() ?? string.Empty;
 

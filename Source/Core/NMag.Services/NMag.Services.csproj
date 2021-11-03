@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\NMag.Domain\NMag.Domain.csproj" />
+    <ProjectReference Include="..\NMag.Persistence\NMag.Persistence.csproj" />
   </ItemGroup>
 
   <ItemGroup>
