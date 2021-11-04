@@ -1,2 +1,2 @@
-loaddataset path="c:\Users\Munno\Dropbox\NTNU\Master Thesis\Final\Upload\Data\Orkla\Orkla.set"
+loaddataset path="c:\Orkla.set"
 creategraph outputimage="c:\temp\test.png" horizontalspacing=0.5 verticalspacing=0.5
